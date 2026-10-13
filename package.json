@@ -1,0 +1,14 @@
+{
+  "name": "dental-scan-viewer",
+  "version": "1.0.0",
+  "description": "Open a dental CBCT (DICOM) scan in your browser. No Windows software, nothing uploaded.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build-standalone.mjs",
+    "start": "npx --yes http-server -c-1 -p 8080 ."
+  }
+}

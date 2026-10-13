@@ -6,6 +6,8 @@
 
 ![Panoramic view of the demo scan](demo/panoramic.png)
 
+🎬 [Watch the 50-second demo](demo/demo-video.mp4)
+
 ## Why this exists
 
 I went to the dentist with pain in my left jaw. They took a 3D cone-beam CT scan and sent it to me as

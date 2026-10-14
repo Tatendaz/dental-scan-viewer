@@ -6,17 +6,17 @@
 
 ![Panoramic view of the demo scan](demo/panoramic.png)
 
-🎬 [Watch the 50-second demo](demo/demo-video.mp4)
+🎬 [Watch the 36-second demo](demo/demo-video.mp4)
 
 ## Why this exists
 
-I went to the dentist with pain in my left jaw. They took a 3D cone-beam CT scan and sent it to me as
-a `.rar` archive containing a Windows-only viewer (Planmeca Romexis) and a 335 MB DICOM file. My
-phone couldn't open it, and neither could my Mac.
+My left jaw was hurting, so my dentist took a 3D cone-beam CT scan. Later I needed to show it to a
+neurologist. The scan was on my phone as a `.rar` archive containing a Windows-only viewer (Planmeca
+Romexis) and a 335 MB DICOM file. My phone couldn't open it, and neither could my Mac.
 
-So I gave the link to Claude. It downloaded and unpacked the archive, worked out what the files
-were, and built this viewer so I could actually look at my own scan. It also read the scan and gave
-me a (non-medical) opinion on what it saw. This repo is that viewer, with my anonymized scan as the demo.
+So I gave the file to Claude. It unpacked the archive, worked out what the files were, and built this
+viewer so I could actually look at (and show) my own scan. It also read the scan and gave me a
+non-medical opinion on what it saw. This repo is that viewer, with my anonymized scan as the demo.
 
 ## What it does
 

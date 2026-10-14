@@ -14,7 +14,7 @@ Dental clinics hand out CBCT scans bundled with Windows-only viewers, so patient
 - `dicom.js`: a dependency-free parser for multi-frame 16-bit DICOM. It handles gzip and split `.partN` files, plus a lookup-table builder and a picker for the densest (tooth-level) slice.
 - `scripts/build-standalone.mjs` → `dist/dental-scan-viewer.html`: a single-file offline version that works from `file://`.
 - `demo/`: an anonymized, downsampled (0.4 mm) demo scan and a panoramic reconstruction image.
-- `demo/demo-video.mp4`: a 50-second walkthrough, linked from the README.
+- `demo/demo-video.mp4`: a 36-second walkthrough (the 16:9 cut of the launch video), linked from the README.
 - `tests/`: node:test unit tests for the parser and the build.
 
 ## Notes

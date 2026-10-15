@@ -6,7 +6,7 @@
 
 ![Panoramic view of the demo scan](demo/panoramic.png)
 
-🎬 [Watch the 36-second demo](demo/demo-video.mp4)
+🎬 [Watch the 33-second demo](demo/demo-video.mp4)
 
 ## Why this exists
 

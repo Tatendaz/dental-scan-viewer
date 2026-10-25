@@ -1,4 +1,4 @@
-# Feature: 7-day npm cooldown
+# Feature: 7-day npm cooldown, zizmor and merge-when-clean
 
 **Branch:** security/hardening-2026-10-25
 **Date:** 2026-10-25
@@ -15,7 +15,11 @@ which is usually long enough for it to be found and pulled.
 
 ## What changed
 - `.npmrc`: `min-release-age=7`.
+- `.github/workflows/merge-when-clean.yml`: the sweep's shared template, unchanged. Merges Dependabot PRs and the owner's `security/*` / `automerge` PRs once checks are green, a real review ran on the head and 0 threads are open.
+- `.github/workflows/zizmor.yml`: zizmor 1.31.1 via `zizmorcore/zizmor-action` v0.7.1 (SHA-pinned), fails on high findings.
+- `.github/dependabot.yml`: github-actions updates, monthly, `cooldown.default-days: 7`, minor + patch grouped, at most 3 open PRs.
 
 ## Notes
-- No Dependabot config, zizmor job or `.coderabbit.yaml`: the repo has no dependencies and no workflows, so there is nothing for them to act on.
+- No npm Dependabot entry: the repo has no dependencies.
+- GitHub Pages builds from `main` (legacy build, not a workflow file). A merge made by the merge-when-clean job uses GITHUB_TOKEN, which may not start a Pages build. If the live site lags after an automatic merge, push any commit or re-run the Pages build from the repo settings.
 - Needs a recent npm. npm 11.20.0 on the owner's Mac reads it (`npm config get min-release-age` prints 7). Older npm warns and ignores it.

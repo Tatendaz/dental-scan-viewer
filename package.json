@@ -9,6 +9,6 @@
   "scripts": {
     "test": "node --test",
     "build": "node scripts/build-standalone.mjs",
-    "start": "npx --yes http-server -c-1 -p 8080 ."
+    "start": "npx --yes http-server@14.1.1 -c-1 -p 8080 ."
   }
 }
